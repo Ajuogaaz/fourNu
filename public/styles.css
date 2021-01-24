@@ -1,0 +1,158 @@
+body {
+  background: #551a8b;
+}
+.sidenav {
+  height: 100%;
+  width: 300px;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Main content */
+.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 2rem;
+  display: grid;
+  grid-template-areas: "left-nav main main right-nav";
+}
+
+.courses-grid {
+  grid-area: left-nav;
+}
+
+.semester-grid {
+  grid-area: main;
+}
+
+.school-grid {
+  grid: right-nav;
+  padding: 1rem 4rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 210px;
+  margin: 1rem auto;
+  background: #cfcdff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card hr {
+  width: 90%;
+  background: #cfcdff;
+  color: #000;
+}
+
+.m-1 {
+  margin: 0.5rem 0;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.py-1 {
+  padding: 0 1rem;
+}
+
+.px {
+  padding: 0.5rem;
+}
+
+.px-1 {
+  padding: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+
+.input {
+  margin-top: 16px;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: #cfcdff;
+  outline: none;
+  border: none;
+}
+
+.course-header {
+  background: #fff;
+}
+
+.card-wrapper {
+  background: #cfcdff;
+  width: 90%;
+  margin-top: 0.2rem;
+}
+
+.course {
+  width: 60%;
+  height: auto;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.course-content {
+  background: #38208d;
+  color: #fff;
+}
+
+.card-content {
+  margin-top: 1.5rem;
+}
+
+.course-1 {
+  width: 180px;
+  height: 35px;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.course-1 > p {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  font-weight: 600;
+}
